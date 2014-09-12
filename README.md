@@ -41,3 +41,8 @@ The App
  * The Keyboard will be made from 26 buttons, not a UITextfield, since I only want letters, and just one at a time as input.
  * The progress of the hanging will be shown through 10 images, that increment everytime a wrong anwser is given.
  * The Settingsscreen will be a list, like the settings app on the iphone.
+
+Layout
+------
+
+![Rough Layout of Evil Hangman](https://raw.githubusercontent.com/OvanHouten/Evil-Hangman-iOS/raw/master/doc/BasicAppLayout.png)
