@@ -462,6 +462,7 @@
 				ED8D81DF19BF4CB2006B19E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED8D81E019BF4CB2006B19E1 /* Build configuration list for PBXNativeTarget "Evil-Hangman-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				ED8D81E219BF4CB2006B19E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
