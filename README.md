@@ -45,4 +45,4 @@ The App
 Layout
 ------
 
-![Rough Layout of Evil Hangman](https://raw.githubusercontent.com/OvanHouten/Evil-Hangman-iOS/raw/master/doc/BasicAppLayout.png)
+![Rough Layout of Evil Hangman](https://github.com/OvanHouten/Evil-Hangman-iOS/blob/master/doc/BasicAppLayout.png)
