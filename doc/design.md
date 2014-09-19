@@ -9,12 +9,14 @@ you are able to separate concerns, since each of the components deal with their 
 The View
 --------
 The View typically deals with what the user sees. Background, buttons, sliders etc. It should update accordingly to
-your actions which are done by the Model.
+your actions which are done by the Model. There will be 2 Views, one for the game, and one for the settings.
 
 Model
 -----
 The Model is the component in the app that interacts with a database, or an internet connection. Here lies the actual
-logic of the application.
+logic of the application. One of these logics will be of checking if a letter is an valid guess or not. I plan to do
+this with a hash table, to quickly sort an array in a new array, where the words are sorted by the position of the
+guessed letters.
 
 Controller
 ----------
