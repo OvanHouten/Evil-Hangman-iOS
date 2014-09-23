@@ -10,29 +10,29 @@
 	<string>Evil-Hangman-iOS</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E84BD85F-5963-41D6-A627-12300DBBE83D</key>
+		<key>C65E8EB37FAFCDCFFA7E5536889FA503E3FB149F</key>
 		<string>https://github.com/OvanHouten/Evil-Hangman-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Evil-Hangman-iOS/Evil-Hangman-iOS.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E84BD85F-5963-41D6-A627-12300DBBE83D</key>
+		<key>C65E8EB37FAFCDCFFA7E5536889FA503E3FB149F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/OvanHouten/Evil-Hangman-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E84BD85F-5963-41D6-A627-12300DBBE83D</string>
+	<string>C65E8EB37FAFCDCFFA7E5536889FA503E3FB149F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E84BD85F-5963-41D6-A627-12300DBBE83D</string>
+			<string>C65E8EB37FAFCDCFFA7E5536889FA503E3FB149F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Evil-Hangman-iOS</string>
 		</dict>

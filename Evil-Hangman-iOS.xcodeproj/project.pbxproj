@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED5843AF19D1D49B00C32981 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED5843AE19D1D49B00C32981 /* words.plist */; };
 		ED8D81AC19BF4CB2006B19E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */; };
 		ED8D81AE19BF4CB2006B19E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AD19BF4CB2006B19E1 /* CoreGraphics.framework */; };
 		ED8D81B019BF4CB2006B19E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AF19BF4CB2006B19E1 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED5843AE19D1D49B00C32981 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 		ED8D81A819BF4CB2006B19E1 /* Evil-Hangman-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evil-Hangman-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED8D81AD19BF4CB2006B19E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 		ED8D81B219BF4CB2006B19E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED5843AE19D1D49B00C32981 /* words.plist */,
 				ED8D81B319BF4CB2006B19E1 /* Evil-Hangman-iOS-Info.plist */,
 				ED8D81B419BF4CB2006B19E1 /* InfoPlist.strings */,
 				ED8D81B719BF4CB2006B19E1 /* main.m */,
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5843AF19D1D49B00C32981 /* words.plist in Resources */,
 				ED8D81C719BF4CB2006B19E1 /* Images.xcassets in Resources */,
 				ED8D81B619BF4CB2006B19E1 /* InfoPlist.strings in Resources */,
 				ED8D81BF19BF4CB2006B19E1 /* Main.storyboard in Resources */,

@@ -14,6 +14,7 @@
 
 @implementation MainViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,4 +41,8 @@
     }
 }
 
+- (IBAction)keyboardButton:(UIButton *)sender {
+    NSLog(@"Keyvalue: %@", sender.titleLabel.text);
+    sender.enabled = NO;
+}
 @end

@@ -10,4 +10,8 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
+- (IBAction)keyboardButton:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+
 @end
