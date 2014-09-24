@@ -7,11 +7,14 @@
 //
 
 #import "FlipsideViewController.h"
+#import "GameObject.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
-- (IBAction)keyboardButton:(UIButton *)sender;
+@property GameObject * game;
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+
+- (IBAction)keyboardButton:(UIButton *)sender;
 
 @end

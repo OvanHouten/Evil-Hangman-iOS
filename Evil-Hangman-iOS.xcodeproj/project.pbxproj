@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED5843AF19D1D49B00C32981 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED5843AE19D1D49B00C32981 /* words.plist */; };
+		ED5843B419D224F300C32981 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5843B319D224F300C32981 /* WordList.m */; };
+		ED5843B819D2272C00C32981 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5843B719D2272C00C32981 /* GameObject.m */; };
 		ED8D81AC19BF4CB2006B19E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */; };
 		ED8D81AE19BF4CB2006B19E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AD19BF4CB2006B19E1 /* CoreGraphics.framework */; };
 		ED8D81B019BF4CB2006B19E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AF19BF4CB2006B19E1 /* UIKit.framework */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		ED5843AE19D1D49B00C32981 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
+		ED5843B319D224F300C32981 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordList.m; sourceTree = "<group>"; };
+		ED5843B519D2251300C32981 /* WordList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
+		ED5843B619D2271800C32981 /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		ED5843B719D2272C00C32981 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		ED8D81A819BF4CB2006B19E1 /* Evil-Hangman-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evil-Hangman-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED8D81AD19BF4CB2006B19E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +130,10 @@
 				ED8D81C119BF4CB2006B19E1 /* MainViewController.m */,
 				ED8D81C319BF4CB2006B19E1 /* FlipsideViewController.h */,
 				ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */,
+				ED5843B619D2271800C32981 /* GameObject.h */,
+				ED5843B719D2272C00C32981 /* GameObject.m */,
+				ED5843B519D2251300C32981 /* WordList.h */,
+				ED5843B319D224F300C32981 /* WordList.m */,
 				ED8D81C619BF4CB2006B19E1 /* Images.xcassets */,
 				ED8D81B219BF4CB2006B19E1 /* Supporting Files */,
 			);
@@ -259,9 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8D81BC19BF4CB2006B19E1 /* AppDelegate.m in Sources */,
+				ED5843B819D2272C00C32981 /* GameObject.m in Sources */,
 				ED8D81C219BF4CB2006B19E1 /* MainViewController.m in Sources */,
 				ED8D81C519BF4CB2006B19E1 /* FlipsideViewController.m in Sources */,
 				ED8D81B819BF4CB2006B19E1 /* main.m in Sources */,
+				ED5843B419D224F300C32981 /* WordList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
