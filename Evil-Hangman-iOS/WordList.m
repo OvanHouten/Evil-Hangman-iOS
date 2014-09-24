@@ -19,16 +19,13 @@
     self.words = [[NSMutableArray alloc] init];
     NSString * path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"plist"];
     NSMutableArray * dictionary = [NSMutableArray arrayWithContentsOfFile:path];
-    int length = 24;
+    int length = 4;
     
     for (int i = 0; i < dictionary.count; i++) {
         if([[dictionary objectAtIndex:i] length] == length) {
             [self.words addObject:[dictionary objectAtIndex:i]];
-            NSLog(@"%@", [dictionary objectAtIndex:i]);
         }
     }
-    
-    NSLog(@"%d", self.words.count);
     
     return self;
 }

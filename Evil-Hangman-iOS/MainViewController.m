@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     self.game = [[GameObject alloc] init];
-    self.wordLabel.text = _game.currentWord;
+    self.wordLabel.text = self.game.currentWord;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -43,7 +43,6 @@
 }
 
 - (IBAction)keyboardButton:(UIButton *)sender {
-    NSLog(@"Keyvalue: %@", sender.titleLabel.text);
     sender.enabled = NO;
     [self.game checkInput:[sender.titleLabel.text characterAtIndex:0]];
     self.wordLabel.text = self.game.currentWord;

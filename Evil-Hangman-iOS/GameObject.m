@@ -24,7 +24,7 @@
 
 - (id)init {
 	self = [super init];
-	int length = 24;
+	int length = 4;
 	self.list = [[WordList alloc] init];
 	
 	self.currentWord = [[NSMutableString alloc] init];
