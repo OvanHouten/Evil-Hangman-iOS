@@ -8,35 +8,31 @@
 
 #import "MainViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController () <NSFileManagerDelegate>
 
 @end
 
 @implementation MainViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.game = [[GameObject alloc] init];
     self.wordLabel.text = self.game.currentWord;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
-{
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
     }
