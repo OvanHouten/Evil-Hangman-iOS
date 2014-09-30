@@ -6,17 +6,16 @@
 //  Copyright (c) 2014 Olaf van Houten. All rights reserved.
 //
 
-//if([[self.list.words objectAtIndex:i] containsString:input] == YES) {
-//	
-//}
-//else {
-//	[doesNotContain addObject:[self.list.words objectAtIndex:i]];
-//}
-
 #import <Foundation/Foundation.h>
 #import "GameObject.h"
 
-@interface GameObject ()
+@interface GameObject () {
+	NSMutableArray * remainingWords;
+	NSInteger wordLength;
+	NSInteger totalTries;
+	NSInteger currentTries;
+	BOOL disableLetters;
+}
 
 @end
 
@@ -24,32 +23,54 @@
 
 - (id)init {
 	self = [super init];
-	int length = 4;
-	self.list = [[WordList alloc] init];
 	
+	// Get the user settings from the plist
+	NSString * path = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"plist"];
+	NSDictionary * dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+	self.settings = [NSUserDefaults standardUserDefaults];
+	[self.settings registerDefaults:dictionary];
+	
+	// Set the settings in our game object
+	wordLength = [self.settings integerForKey:@"Wordlength"];
+	disableLetters = [self.settings boolForKey:@"DisableLetters"];
+	totalTries = [self.settings integerForKey:@"TotalTries"];
+	currentTries = 0;
+	
+	// Create our obfuscated word
 	self.currentWord = [[NSMutableString alloc] init];
-	for(int i = 0; i < length; i++) {
+	for(int i = 0; i < wordLength; i++) {
 		[self.currentWord appendString:@"_"];
+	}
+	
+	// Load part of the english word list into an array
+	path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"plist"];
+	NSMutableArray * englishWords = [NSMutableArray arrayWithContentsOfFile:path];
+	remainingWords = [[NSMutableArray alloc] init];
+	
+	for (int i = 0; i < englishWords.count; i++) {
+		if([[englishWords objectAtIndex:i] length] == wordLength) {
+			[remainingWords addObject:[englishWords objectAtIndex:i]];
+		}
 	}
 	
 	return self;
 }
 
-- (NSMutableString *)checkInput:(char)input {
+- (BOOL)checkInput:(char)input {
 	NSMutableArray * sortArray = [[NSMutableArray alloc] init];
 	[sortArray addObject:[NSMutableArray arrayWithObject:self.currentWord]];
 	NSMutableString * tempWord = [[NSMutableString alloc] init];
 	BOOL notFound;
 	
 	// Loop through all the remaining words. First word is the obfuscated word so we start at index 1
-	for(int i = 1; i < self.list.words.count; i++) {
+	for(int i = 1; i < remainingWords.count; i++) {
 		// Create a word from the remaining list as if it was obfuscated.
-		tempWord = [self createHangmanWord:[self.list.words objectAtIndex:i] withInput:input];
+		tempWord = [self createHangmanWord:[remainingWords objectAtIndex:i] withInput:input];
 		notFound = YES;
 		// Loop through all arrays to find one with same obfuscation, and add to it if found.
 		for(int j = 0; j < sortArray.count; j++) {
 			if([tempWord isEqualToString:[[sortArray objectAtIndex:j] objectAtIndex:0]]) {
-				[[sortArray objectAtIndex:j] addObject:[self.list.words objectAtIndex:i]];
+				[[sortArray objectAtIndex:j] addObject:[remainingWords objectAtIndex:i]];
 				notFound = NO;
 			}
 		}
@@ -59,7 +80,7 @@
 		if(notFound) {
 			NSMutableArray * newArray = [[NSMutableArray alloc] init];
 			[newArray addObject:tempWord];
-			[newArray addObject:[self.list.words objectAtIndex:i]];
+			[newArray addObject:[remainingWords objectAtIndex:i]];
 			[sortArray addObject:newArray];
 		}
 	}
@@ -74,7 +95,7 @@
 	
 	// Now we only look at the longest lists, and search for one with the least revealed letters.
 	NSMutableArray * leastLetterArray = [[NSMutableArray alloc] init];
-	int leastLetters = 24;
+	int leastLetters = 100;
 	for(int i = 0; i < sortArray.count; i++) {
 		if([[sortArray objectAtIndex:i] count] == longestArraySize) {
 			if([self revealedCharInWord:[[sortArray objectAtIndex:i] objectAtIndex:0]] < leastLetters) {
@@ -84,15 +105,14 @@
 		}
 	}
 	
-	self.list.words = leastLetterArray;
+	remainingWords = leastLetterArray;
 	
-	[self updateObfuscatedWord:[leastLetterArray objectAtIndex:0] withInput:input];
-	
-	return [leastLetterArray objectAtIndex:0];
+	return [self updateObfuscatedWord:[leastLetterArray objectAtIndex:0] withInput:input];
 }
 
 - (BOOL)updateObfuscatedWord:(NSMutableString *)word withInput:(char)input {
 	NSMutableString * newWord = [[NSMutableString alloc] init];
+	int count = 0;
 	
 	for(int i = 0; i < self.currentWord.length; i++) {
 		if([self.currentWord characterAtIndex:i] != '_') {
@@ -104,13 +124,25 @@
 			}
 			else {
 				[newWord appendString:@"_"];
+				count++;
 			}
+		}
+	}
+	
+	if([self.currentWord isEqualToString:newWord]) {
+		currentTries++;
+		if(currentTries >= totalTries) {
+			[self.settings setBool:YES forKey:@"GameLost"];
+			[self.settings synchronize];
 		}
 	}
 	
 	self.currentWord = newWord;
 	
-	return YES;
+	if(count == 0) {
+		return YES;
+	}
+	return NO;
 }
 
 - (NSMutableString *)createHangmanWord:(NSString *)word withInput:(char)input {

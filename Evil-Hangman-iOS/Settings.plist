@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisableLetters</key>
+	<false/>
+	<key>Wordlength</key>
+	<integer>14</integer>
+	<key>TotalTries</key>
+	<integer>10</integer>
+	<key>GameLost</key>
+	<false/>
+	<key>ResetGame</key>
+	<false/>
+</dict>
+</plist>

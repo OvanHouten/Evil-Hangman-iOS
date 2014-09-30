@@ -9,11 +9,12 @@
 #import "FlipsideViewController.h"
 #import "GameObject.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIAlertViewDelegate>
 
 @property GameObject * game;
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allKeyboardButtons;
 
 - (IBAction)keyboardButton:(UIButton *)sender;
 

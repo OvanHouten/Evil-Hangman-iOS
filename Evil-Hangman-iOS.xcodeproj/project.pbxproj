@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0C10BD19D5B7830056DCE3 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED0C10BC19D5B7830056DCE3 /* Settings.plist */; };
 		ED5843AF19D1D49B00C32981 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED5843AE19D1D49B00C32981 /* words.plist */; };
-		ED5843B419D224F300C32981 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5843B319D224F300C32981 /* WordList.m */; };
 		ED5843B819D2272C00C32981 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5843B719D2272C00C32981 /* GameObject.m */; };
 		ED8D81AC19BF4CB2006B19E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */; };
 		ED8D81AE19BF4CB2006B19E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AD19BF4CB2006B19E1 /* CoreGraphics.framework */; };
@@ -23,8 +23,6 @@
 		ED8D81CE19BF4CB2006B19E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81CD19BF4CB2006B19E1 /* XCTest.framework */; };
 		ED8D81CF19BF4CB2006B19E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */; };
 		ED8D81D019BF4CB2006B19E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AF19BF4CB2006B19E1 /* UIKit.framework */; };
-		ED8D81D819BF4CB2006B19E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED8D81D619BF4CB2006B19E1 /* InfoPlist.strings */; };
-		ED8D81DA19BF4CB2006B19E1 /* Evil_Hangman_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8D81D919BF4CB2006B19E1 /* Evil_Hangman_iOSTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED0C10BC19D5B7830056DCE3 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		ED5843AE19D1D49B00C32981 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
-		ED5843B319D224F300C32981 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordList.m; sourceTree = "<group>"; };
-		ED5843B519D2251300C32981 /* WordList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
-		ED5843B619D2271800C32981 /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		ED5843B619D2271800C32981 /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; usesTabs = 1; };
 		ED5843B719D2272C00C32981 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		ED8D81A819BF4CB2006B19E1 /* Evil-Hangman-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evil-Hangman-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,19 +48,16 @@
 		ED8D81B519BF4CB2006B19E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED8D81B719BF4CB2006B19E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED8D81B919BF4CB2006B19E1 /* Evil-Hangman-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Evil-Hangman-iOS-Prefix.pch"; sourceTree = "<group>"; };
-		ED8D81BA19BF4CB2006B19E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ED8D81BB19BF4CB2006B19E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED8D81BA19BF4CB2006B19E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; usesTabs = 1; };
+		ED8D81BB19BF4CB2006B19E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; usesTabs = 1; };
 		ED8D81BE19BF4CB2006B19E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED8D81C019BF4CB2006B19E1 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		ED8D81C119BF4CB2006B19E1 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		ED8D81C319BF4CB2006B19E1 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		ED8D81C019BF4CB2006B19E1 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; usesTabs = 1; };
+		ED8D81C119BF4CB2006B19E1 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; usesTabs = 1; };
+		ED8D81C319BF4CB2006B19E1 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; usesTabs = 1; };
+		ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; usesTabs = 1; };
 		ED8D81C619BF4CB2006B19E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED8D81CC19BF4CB2006B19E1 /* Evil-Hangman-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Evil-Hangman-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8D81CD19BF4CB2006B19E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		ED8D81D519BF4CB2006B19E1 /* Evil-Hangman-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Evil-Hangman-iOSTests-Info.plist"; sourceTree = "<group>"; };
-		ED8D81D719BF4CB2006B19E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ED8D81D919BF4CB2006B19E1 /* Evil_Hangman_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Evil_Hangman_iOSTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				ED8D81B119BF4CB2006B19E1 /* Evil-Hangman-iOS */,
-				ED8D81D319BF4CB2006B19E1 /* Evil-Hangman-iOSTests */,
 				ED8D81AA19BF4CB2006B19E1 /* Frameworks */,
 				ED8D81A919BF4CB2006B19E1 /* Products */,
 			);
@@ -132,8 +125,6 @@
 				ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */,
 				ED5843B619D2271800C32981 /* GameObject.h */,
 				ED5843B719D2272C00C32981 /* GameObject.m */,
-				ED5843B519D2251300C32981 /* WordList.h */,
-				ED5843B319D224F300C32981 /* WordList.m */,
 				ED8D81C619BF4CB2006B19E1 /* Images.xcassets */,
 				ED8D81B219BF4CB2006B19E1 /* Supporting Files */,
 			);
@@ -143,29 +134,12 @@
 		ED8D81B219BF4CB2006B19E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED0C10BC19D5B7830056DCE3 /* Settings.plist */,
 				ED5843AE19D1D49B00C32981 /* words.plist */,
 				ED8D81B319BF4CB2006B19E1 /* Evil-Hangman-iOS-Info.plist */,
 				ED8D81B419BF4CB2006B19E1 /* InfoPlist.strings */,
 				ED8D81B719BF4CB2006B19E1 /* main.m */,
 				ED8D81B919BF4CB2006B19E1 /* Evil-Hangman-iOS-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ED8D81D319BF4CB2006B19E1 /* Evil-Hangman-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				ED8D81D919BF4CB2006B19E1 /* Evil_Hangman_iOSTests.m */,
-				ED8D81D419BF4CB2006B19E1 /* Supporting Files */,
-			);
-			path = "Evil-Hangman-iOSTests";
-			sourceTree = "<group>";
-		};
-		ED8D81D419BF4CB2006B19E1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED8D81D519BF4CB2006B19E1 /* Evil-Hangman-iOSTests-Info.plist */,
-				ED8D81D619BF4CB2006B19E1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -250,6 +224,7 @@
 				ED8D81C719BF4CB2006B19E1 /* Images.xcassets in Resources */,
 				ED8D81B619BF4CB2006B19E1 /* InfoPlist.strings in Resources */,
 				ED8D81BF19BF4CB2006B19E1 /* Main.storyboard in Resources */,
+				ED0C10BD19D5B7830056DCE3 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8D81D819BF4CB2006B19E1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +247,6 @@
 				ED8D81C219BF4CB2006B19E1 /* MainViewController.m in Sources */,
 				ED8D81C519BF4CB2006B19E1 /* FlipsideViewController.m in Sources */,
 				ED8D81B819BF4CB2006B19E1 /* main.m in Sources */,
-				ED5843B419D224F300C32981 /* WordList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8D81DA19BF4CB2006B19E1 /* Evil_Hangman_iOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +282,6 @@
 				ED8D81BE19BF4CB2006B19E1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ED8D81D619BF4CB2006B19E1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED8D81D719BF4CB2006B19E1 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
