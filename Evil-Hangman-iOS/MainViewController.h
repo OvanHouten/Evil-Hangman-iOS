@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allKeyboardButtons;
+@property (strong, nonatomic) IBOutlet UIImageView *progressImage;
 
 - (IBAction)keyboardButton:(UIButton *)sender;
 

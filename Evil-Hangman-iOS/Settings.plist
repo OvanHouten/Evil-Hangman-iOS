@@ -8,6 +8,8 @@
 	<integer>14</integer>
 	<key>TotalTries</key>
 	<integer>10</integer>
+	<key>IndexImage</key>
+	<integer>0</integer>
 	<key>GameLost</key>
 	<false/>
 	<key>ResetGame</key>

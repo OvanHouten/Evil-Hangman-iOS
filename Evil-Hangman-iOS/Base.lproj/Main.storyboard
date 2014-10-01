@@ -283,6 +283,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressImage" destination="cJR-Vb-ajP" id="FiA-As-gta"/>
                         <outlet property="wordLabel" destination="8GQ-d3-WP0" id="m54-9I-0Z0"/>
                         <outletCollection property="allKeyboardButtons" destination="slf-ib-qho" id="h9m-Kl-Wdl"/>
                         <outletCollection property="allKeyboardButtons" destination="79A-XQ-nF0" id="Sos-Ju-Bk4"/>

@@ -12,8 +12,8 @@
 @interface GameObject () {
 	NSMutableArray * remainingWords;
 	NSInteger wordLength;
-	NSInteger totalTries;
 	NSInteger currentTries;
+	NSInteger totalTries;
 	BOOL disableLetters;
 }
 
@@ -21,6 +21,9 @@
 
 @implementation GameObject
 
+/*
+ *	The init method of GameObject. Sets various variables for from settings, also reloads the words, with possibly a new length.
+ */
 - (id)init {
 	self = [super init];
 	
@@ -47,6 +50,7 @@
 	NSMutableArray * englishWords = [NSMutableArray arrayWithContentsOfFile:path];
 	remainingWords = [[NSMutableArray alloc] init];
 	
+	// Add only the words that conform the length set by the user
 	for (int i = 0; i < englishWords.count; i++) {
 		if([[englishWords objectAtIndex:i] length] == wordLength) {
 			[remainingWords addObject:[englishWords objectAtIndex:i]];
@@ -56,6 +60,10 @@
 	return self;
 }
 
+/*
+ *	Whenever a keyboard button is pressed, this method will be called. It creates a new array of words according to user input
+ *	The goal of the method is to pick the longest array, while still staying truthfull to the rules of hangman.
+ */
 - (BOOL)checkInput:(char)input {
 	NSMutableArray * sortArray = [[NSMutableArray alloc] init];
 	[sortArray addObject:[NSMutableArray arrayWithObject:self.currentWord]];
@@ -110,6 +118,11 @@
 	return [self updateObfuscatedWord:[leastLetterArray objectAtIndex:0] withInput:input];
 }
 
+/*
+ *	Create a word with new letters revealed, if a letter has been guessed correctly.
+ *	If the word has been guessed, the method will return YES, if not it wil return NO.
+ *	It also checks if the maximum allowed guesses is reached.
+ */
 - (BOOL)updateObfuscatedWord:(NSMutableString *)word withInput:(char)input {
 	NSMutableString * newWord = [[NSMutableString alloc] init];
 	int count = 0;
@@ -129,22 +142,37 @@
 		}
 	}
 	
+	// A user guessed wrong, if the new word happens to be the same as the word on screen.
 	if([self.currentWord isEqualToString:newWord]) {
 		currentTries++;
+		
+		[self.settings setInteger:floor(currentTries / (totalTries * 1.0F) * 10) forKey:@"IndexImage"];
+		
+		// The game is lost whenever currentTries is equal or exceeded by totalTries
 		if(currentTries >= totalTries) {
+			// Set a random word whenever the game is lost from the remaining, 1 is the lower bound, index 0 has no real word, but our comparison word
+			// The length of the list is the upperbound of our range.
+			int randomIndex = 1 + arc4random() % (remainingWords.count - 1);
+			self.currentWord = [remainingWords objectAtIndex:randomIndex];
+			
 			[self.settings setBool:YES forKey:@"GameLost"];
 			[self.settings synchronize];
 		}
 	}
+	else {
+		self.currentWord = newWord;
+	}
 	
-	self.currentWord = newWord;
-	
+	// If there are no more empty spots left, the gam is won and YES will be returned.
 	if(count == 0) {
 		return YES;
 	}
 	return NO;
 }
 
+/*
+ *	Used to compare words, to decide in what group they belong.
+ */
 - (NSMutableString *)createHangmanWord:(NSString *)word withInput:(char)input {
 	NSMutableString * newWord = [[NSMutableString alloc] init];
 	
@@ -160,6 +188,9 @@
 	return newWord;
 }
 
+/*
+ *	Used to check what wordlist has the least revealed letters, whenever they contain the same amount of words.
+ */
 - (int)revealedCharInWord: (NSString *)word {
 	int count = 0;
 	

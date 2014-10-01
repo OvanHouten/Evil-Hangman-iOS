@@ -23,6 +23,17 @@
 		ED8D81CE19BF4CB2006B19E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81CD19BF4CB2006B19E1 /* XCTest.framework */; };
 		ED8D81CF19BF4CB2006B19E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AB19BF4CB2006B19E1 /* Foundation.framework */; };
 		ED8D81D019BF4CB2006B19E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D81AF19BF4CB2006B19E1 /* UIKit.framework */; };
+		EDF2016A19DCAA6700E8D928 /* Hangman_progress_0.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2015F19DCAA6700E8D928 /* Hangman_progress_0.png */; };
+		EDF2016B19DCAA6700E8D928 /* Hangman_progress_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016019DCAA6700E8D928 /* Hangman_progress_1.png */; };
+		EDF2016C19DCAA6700E8D928 /* Hangman_progress_10.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016119DCAA6700E8D928 /* Hangman_progress_10.png */; };
+		EDF2016D19DCAA6700E8D928 /* Hangman_progress_2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016219DCAA6700E8D928 /* Hangman_progress_2.png */; };
+		EDF2016E19DCAA6700E8D928 /* Hangman_progress_3.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016319DCAA6700E8D928 /* Hangman_progress_3.png */; };
+		EDF2016F19DCAA6700E8D928 /* Hangman_progress_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016419DCAA6700E8D928 /* Hangman_progress_4.png */; };
+		EDF2017019DCAA6700E8D928 /* Hangman_progress_5.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016519DCAA6700E8D928 /* Hangman_progress_5.png */; };
+		EDF2017119DCAA6700E8D928 /* Hangman_progress_6.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016619DCAA6700E8D928 /* Hangman_progress_6.png */; };
+		EDF2017219DCAA6700E8D928 /* Hangman_progress_7.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016719DCAA6700E8D928 /* Hangman_progress_7.png */; };
+		EDF2017319DCAA6700E8D928 /* Hangman_progress_8.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016819DCAA6700E8D928 /* Hangman_progress_8.png */; };
+		EDF2017419DCAA6700E8D928 /* Hangman_progress_9.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF2016919DCAA6700E8D928 /* Hangman_progress_9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,17 @@
 		ED8D81C619BF4CB2006B19E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED8D81CC19BF4CB2006B19E1 /* Evil-Hangman-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Evil-Hangman-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8D81CD19BF4CB2006B19E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EDF2015F19DCAA6700E8D928 /* Hangman_progress_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_0.png; sourceTree = "<group>"; };
+		EDF2016019DCAA6700E8D928 /* Hangman_progress_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_1.png; sourceTree = "<group>"; };
+		EDF2016119DCAA6700E8D928 /* Hangman_progress_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_10.png; sourceTree = "<group>"; };
+		EDF2016219DCAA6700E8D928 /* Hangman_progress_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_2.png; sourceTree = "<group>"; };
+		EDF2016319DCAA6700E8D928 /* Hangman_progress_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_3.png; sourceTree = "<group>"; };
+		EDF2016419DCAA6700E8D928 /* Hangman_progress_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_4.png; sourceTree = "<group>"; };
+		EDF2016519DCAA6700E8D928 /* Hangman_progress_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_5.png; sourceTree = "<group>"; };
+		EDF2016619DCAA6700E8D928 /* Hangman_progress_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_6.png; sourceTree = "<group>"; };
+		EDF2016719DCAA6700E8D928 /* Hangman_progress_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_7.png; sourceTree = "<group>"; };
+		EDF2016819DCAA6700E8D928 /* Hangman_progress_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_8.png; sourceTree = "<group>"; };
+		EDF2016919DCAA6700E8D928 /* Hangman_progress_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hangman_progress_9.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +143,10 @@
 				ED8D81BD19BF4CB2006B19E1 /* Main.storyboard */,
 				ED8D81C019BF4CB2006B19E1 /* MainViewController.h */,
 				ED8D81C119BF4CB2006B19E1 /* MainViewController.m */,
-				ED8D81C319BF4CB2006B19E1 /* FlipsideViewController.h */,
-				ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */,
 				ED5843B619D2271800C32981 /* GameObject.h */,
 				ED5843B719D2272C00C32981 /* GameObject.m */,
+				ED8D81C319BF4CB2006B19E1 /* FlipsideViewController.h */,
+				ED8D81C419BF4CB2006B19E1 /* FlipsideViewController.m */,
 				ED8D81C619BF4CB2006B19E1 /* Images.xcassets */,
 				ED8D81B219BF4CB2006B19E1 /* Supporting Files */,
 			);
@@ -134,6 +156,7 @@
 		ED8D81B219BF4CB2006B19E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDF2015E19DCAA6700E8D928 /* HangmanImages */,
 				ED0C10BC19D5B7830056DCE3 /* Settings.plist */,
 				ED5843AE19D1D49B00C32981 /* words.plist */,
 				ED8D81B319BF4CB2006B19E1 /* Evil-Hangman-iOS-Info.plist */,
@@ -142,6 +165,24 @@
 				ED8D81B919BF4CB2006B19E1 /* Evil-Hangman-iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDF2015E19DCAA6700E8D928 /* HangmanImages */ = {
+			isa = PBXGroup;
+			children = (
+				EDF2015F19DCAA6700E8D928 /* Hangman_progress_0.png */,
+				EDF2016019DCAA6700E8D928 /* Hangman_progress_1.png */,
+				EDF2016119DCAA6700E8D928 /* Hangman_progress_10.png */,
+				EDF2016219DCAA6700E8D928 /* Hangman_progress_2.png */,
+				EDF2016319DCAA6700E8D928 /* Hangman_progress_3.png */,
+				EDF2016419DCAA6700E8D928 /* Hangman_progress_4.png */,
+				EDF2016519DCAA6700E8D928 /* Hangman_progress_5.png */,
+				EDF2016619DCAA6700E8D928 /* Hangman_progress_6.png */,
+				EDF2016719DCAA6700E8D928 /* Hangman_progress_7.png */,
+				EDF2016819DCAA6700E8D928 /* Hangman_progress_8.png */,
+				EDF2016919DCAA6700E8D928 /* Hangman_progress_9.png */,
+			);
+			path = HangmanImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,11 +261,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF2016F19DCAA6700E8D928 /* Hangman_progress_4.png in Resources */,
+				EDF2016C19DCAA6700E8D928 /* Hangman_progress_10.png in Resources */,
 				ED5843AF19D1D49B00C32981 /* words.plist in Resources */,
+				EDF2017319DCAA6700E8D928 /* Hangman_progress_8.png in Resources */,
+				EDF2017019DCAA6700E8D928 /* Hangman_progress_5.png in Resources */,
 				ED8D81C719BF4CB2006B19E1 /* Images.xcassets in Resources */,
+				EDF2016E19DCAA6700E8D928 /* Hangman_progress_3.png in Resources */,
+				EDF2016A19DCAA6700E8D928 /* Hangman_progress_0.png in Resources */,
+				EDF2017219DCAA6700E8D928 /* Hangman_progress_7.png in Resources */,
 				ED8D81B619BF4CB2006B19E1 /* InfoPlist.strings in Resources */,
+				EDF2017119DCAA6700E8D928 /* Hangman_progress_6.png in Resources */,
 				ED8D81BF19BF4CB2006B19E1 /* Main.storyboard in Resources */,
+				EDF2016D19DCAA6700E8D928 /* Hangman_progress_2.png in Resources */,
 				ED0C10BD19D5B7830056DCE3 /* Settings.plist in Resources */,
+				EDF2016B19DCAA6700E8D928 /* Hangman_progress_1.png in Resources */,
+				EDF2017419DCAA6700E8D928 /* Hangman_progress_9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
