@@ -60,6 +60,8 @@
 - (IBAction)resetGame:(UIButton *)sender {
 	[self.game.settings setBool:YES forKey:@"ResetGame"];
 	[self.game.settings synchronize];
+	
+	[self.delegate flipsideViewControllerDidFinish:self];
 }
 
 @end
